@@ -31,7 +31,7 @@ function [delta_v, m_prop, i_final] = orbit_maintain(MISSION, SC, dL)
      
     
     % theory
-    dadt = -sqrt(mu_E*a) * (rho/BC) * 86400 * 1000
+    dadt = -sqrt(mu_E*a) * (rho/BC) * 86400 * 1000;
     da = sqrt(-(2*a*dadt*dL)/(3*pi*R_E));
     maintain_freq = sqrt(-(8/3)*(a/(pi*R_E))*(dL/dadt));
     maintain_time = 365*MISSION.life/maintain_freq;
