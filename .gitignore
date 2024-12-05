@@ -1,0 +1,8 @@
+*.xlsx
+!Propellant_Budget/atmosphere.xlsx
+*.pptx
+*.pdf
+*.mp4
+.vscode/
+.DS_Store
+*.stl
